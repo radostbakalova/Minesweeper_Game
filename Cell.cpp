@@ -13,7 +13,7 @@ bool Cell::isMine() const {
 }
 
 bool Cell::isFlagged() const {
-    return flag;
+    return flagged;
 }
 
 void Cell::setSurroundingMines(int surroundingMines) {
@@ -21,14 +21,8 @@ void Cell::setSurroundingMines(int surroundingMines) {
 }
 
 void Cell::reveal() {
-    try {
-        if (flagged)
-            throw std::logic_error("Flagged cells cannot be revealed.\n");
-    }
-    catch (const std::logic_error& e) {
-        std::println("{}", e.what());
-        return;
-    }
+    if (flagged)
+        throw std::logic_error("Flagged cells cannot be revealed.\n");
     revealed = true;
 }
 
