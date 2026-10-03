@@ -24,6 +24,7 @@ class Board {
 	void revealNeighbors(int row, int col);
 	void revealFirstCell(int row, int col);
 	void printSymbol(char s, size_t count = 0);
+	void processCells();
 
 public:
 	Board(size_t _rows, size_t _cols, int _totalMines);

@@ -92,6 +92,16 @@ void Board::printSymbol(char s, size_t count) {
 		std::print("{}", s);
 }
 
+void Board::processCells() {
+	while (!cellsToProcess.empty()) {
+		auto [r, c] = cellsToProcess.front();
+		cellsToProcess.erase(cellsToProcess.begin());
+
+		if (board[r][c].getSurroundingMines() == 0)
+			triggerSurroundingCells(r, c);
+	}
+}
+
 Board::Board(size_t _rows, size_t _cols, int _totalMines) : rows(_rows), cols(_cols),
 board(rows, std::vector<Cell>(cols)), totalMines(_totalMines) {}
 
@@ -129,7 +139,6 @@ void Board::display() {
 				}
 				printSymbol(' ');
 			}
-			
 		}
 	}
 }
@@ -163,13 +172,7 @@ bool Board::reveal(int row, int col) {
 				return false;
 
 			cellsToProcess.push_back({ row, col });
-			while (!cellsToProcess.empty()) {
-				auto [r, c] = cellsToProcess.front();
-				cellsToProcess.erase(cellsToProcess.begin());
-
-				if (board[r][c].getSurroundingMines() == 0)
-					triggerSurroundingCells(r, c);
-			}
+			processCells();
 			return true;
 		}
 	}
