@@ -126,6 +126,7 @@
   <ItemGroup>
     <ClCompile Include="Board.cpp" />
     <ClCompile Include="Cell.cpp" />
+    <ClCompile Include="CommandResult.cpp" />
     <ClCompile Include="ICommand.cpp" />
     <ClCompile Include="Minesweeper_Game.cpp" />
     <ClCompile Include="Player.cpp" />
