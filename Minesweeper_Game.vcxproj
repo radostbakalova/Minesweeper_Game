@@ -129,10 +129,12 @@
     <ClCompile Include="Cell.cpp" />
     <ClCompile Include="CommandResult.cpp" />
     <ClCompile Include="ICommand.cpp" />
+    <ClCompile Include="LoginCommand.cpp" />
     <ClCompile Include="Minesweeper_Game.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="Statistics.cpp" />
     <ClCompile Include="User.cpp" />
+    <ClCompile Include="UserManager.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Admin.h" />
@@ -142,9 +144,11 @@
     <ClInclude Include="Constants.h" />
     <ClInclude Include="EnumClasses.h" />
     <ClInclude Include="ICommand.h" />
+    <ClInclude Include="LoginCommand.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="Statistics.h" />
     <ClInclude Include="User.h" />
+    <ClInclude Include="UserManager.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
