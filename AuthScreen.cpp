@@ -18,7 +18,7 @@ ScreenResult AuthScreen::handleInput() {
 	std::cin >> choice;
 	try {
 		CommandResult result = commands.at(choice)->execute();
-		if (result.status == ExecutionResult::LoginSuccess && result.user != std::nullopt) {
+		if (choice == 1 && result.status == ExecutionResult::Success && result.user != std::nullopt) {
 
 			std::println("Successful login!");
 			if ((*result.user)->isAdmin())
@@ -26,17 +26,17 @@ ScreenResult AuthScreen::handleInput() {
 			else
 				return ScreenResult(TransitionResult::GoToPlayerScreen, *result.user);
 		}
-		if (result.status == ExecutionResult::RegistrationSuccess && result.user != std::nullopt) {
+		if (choice == 2 && result.status == ExecutionResult::Success && result.user != std::nullopt) {
 
 			std::println("Successful registration!");
 			return ScreenResult(TransitionResult::GoToPlayerScreen, *result.user);
 		}
-		if (result.status == ExecutionResult::LoginFailure) {
+		if (choice == 1 && result.status == ExecutionResult::Failure) {
 
 			std::println("Failed to login!");
 			return ScreenResult(TransitionResult::Stay, std::nullopt);
 		}
-		if (result.status == ExecutionResult::RegistrationFailure) {
+		if (choice == 2 && result.status == ExecutionResult::Failure) {
 
 			std::println("Failed to register!");
 			return ScreenResult(TransitionResult::Stay, std::nullopt);
@@ -44,8 +44,11 @@ ScreenResult AuthScreen::handleInput() {
 		if (result.status == ExecutionResult::Cancelled)
 			return ScreenResult(TransitionResult::Stay, std::nullopt);
 
-		if (choice == 3)
+		if (choice == 3 && result.status == ExecutionResult::Success)
 			return ScreenResult(TransitionResult::Exit, std::nullopt);
+		
+		std::println("Something went wrong. Please try again.");
+		return ScreenResult(TransitionResult::Stay, std::nullopt);
 	}
 	catch (const std::out_of_range& e) {
 		std::println("No valid command! Please try again.");

@@ -1,10 +1,8 @@
 #pragma once
 
 enum class ExecutionResult {
-	LoginSuccess,
-	RegistrationSuccess,
-	LoginFailure,
-	RegistrationFailure,
+	Success,
+	Failure,
 	Cancelled
 };
 
