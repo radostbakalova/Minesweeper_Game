@@ -128,6 +128,7 @@
     <ClCompile Include="BlockUserCommand.cpp" />
     <ClCompile Include="Board.cpp" />
     <ClCompile Include="Cell.cpp" />
+    <ClCompile Include="CommandFactory.cpp" />
     <ClCompile Include="CommandResult.cpp" />
     <ClCompile Include="ExitCommand.cpp" />
     <ClCompile Include="GameOptions.cpp" />
@@ -150,6 +151,7 @@
     <ClInclude Include="BlockUserCommand.h" />
     <ClInclude Include="Board.h" />
     <ClInclude Include="Cell.h" />
+    <ClInclude Include="CommandFactory.h" />
     <ClInclude Include="CommandResult.h" />
     <ClInclude Include="Constants.h" />
     <ClInclude Include="EnumClasses.h" />
