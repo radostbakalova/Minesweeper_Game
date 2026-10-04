@@ -1,12 +1,13 @@
 #pragma once
+#include "EnumClasses.h"
 #include "User.h"
 #include <optional>
 
 class IScreen;
 
 struct ScreenResult {
-	IScreen* screen;
+	TransitionResult result;
 	std::optional<User*> user;
 
-	explicit ScreenResult(IScreen* _screen, std::optional<User*> _user);
+	explicit ScreenResult(TransitionResult _result, std::optional<User*> _user);
 };
