@@ -133,6 +133,7 @@
     <ClCompile Include="CommandResult.cpp" />
     <ClCompile Include="ExitCommand.cpp" />
     <ClCompile Include="ExpertStrategy.cpp" />
+    <ClCompile Include="Game.cpp" />
     <ClCompile Include="GameOptions.cpp" />
     <ClCompile Include="HowToPlayCommand.cpp" />
     <ClCompile Include="IntermediateStrategy.cpp" />
@@ -162,6 +163,7 @@
     <ClInclude Include="EnumClasses.h" />
     <ClInclude Include="ExitCommand.h" />
     <ClInclude Include="ExpertStrategy.h" />
+    <ClInclude Include="Game.h" />
     <ClInclude Include="GameOptions.h" />
     <ClInclude Include="HowToPlayCommand.h" />
     <ClInclude Include="ICommand.h" />
