@@ -2,7 +2,7 @@
 
 class IDifficultyStrategy {
 public:
-	virtual int getMineCount() = 0;
+	virtual int getMineCount(int totalCells) const = 0;
 	virtual ~IDifficultyStrategy() = default;
 };
 
