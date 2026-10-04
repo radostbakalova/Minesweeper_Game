@@ -8,7 +8,7 @@ class UserManager {
 
 public:
 	UserManager() = default;
-	void loadFromFile(std::string& fileName);
-	void saveToFile(std::string& fileName);
+	void loadFromFile(const std::string& fileName);
+	void saveToFile(const std::string& fileName);
 };
 
