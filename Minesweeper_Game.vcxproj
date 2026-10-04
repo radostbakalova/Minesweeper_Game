@@ -128,10 +128,10 @@
     <ClCompile Include="Board.cpp" />
     <ClCompile Include="Cell.cpp" />
     <ClCompile Include="CommandResult.cpp" />
-    <ClCompile Include="ICommand.cpp" />
     <ClCompile Include="LoginCommand.cpp" />
     <ClCompile Include="Minesweeper_Game.cpp" />
     <ClCompile Include="Player.cpp" />
+    <ClCompile Include="RegisterCommand.cpp" />
     <ClCompile Include="Statistics.cpp" />
     <ClCompile Include="User.cpp" />
     <ClCompile Include="UserManager.cpp" />
@@ -146,6 +146,7 @@
     <ClInclude Include="ICommand.h" />
     <ClInclude Include="LoginCommand.h" />
     <ClInclude Include="Player.h" />
+    <ClInclude Include="RegisterCommand.h" />
     <ClInclude Include="Statistics.h" />
     <ClInclude Include="User.h" />
     <ClInclude Include="UserManager.h" />
