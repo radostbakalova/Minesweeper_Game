@@ -125,6 +125,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Admin.cpp" />
+    <ClCompile Include="BeginnerStrategy.cpp" />
     <ClCompile Include="BlockUserCommand.cpp" />
     <ClCompile Include="Board.cpp" />
     <ClCompile Include="Cell.cpp" />
@@ -149,6 +150,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Admin.h" />
+    <ClInclude Include="BeginnerStrategy.h" />
     <ClInclude Include="BlockUserCommand.h" />
     <ClInclude Include="Board.h" />
     <ClInclude Include="Cell.h" />
