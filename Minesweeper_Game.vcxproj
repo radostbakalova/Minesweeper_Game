@@ -138,6 +138,7 @@
     <ClCompile Include="RegisterCommand.cpp" />
     <ClCompile Include="ShowGameOptionsCommand.cpp" />
     <ClCompile Include="ShowUsersCommand.cpp" />
+    <ClCompile Include="ShowPlayerStatisticsCommand.cpp" />
     <ClCompile Include="Statistics.cpp" />
     <ClCompile Include="User.cpp" />
     <ClCompile Include="UserManager.cpp" />
@@ -159,6 +160,7 @@
     <ClInclude Include="RegisterCommand.h" />
     <ClInclude Include="ShowGameOptionsCommand.h" />
     <ClInclude Include="ShowUsersCommand.h" />
+    <ClInclude Include="ShowPlayerStatisticsCommand.h" />
     <ClInclude Include="Statistics.h" />
     <ClInclude Include="User.h" />
     <ClInclude Include="UserManager.h" />
