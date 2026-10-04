@@ -139,6 +139,7 @@
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="PlayGameCommand.cpp" />
     <ClCompile Include="RegisterCommand.cpp" />
+    <ClCompile Include="Session.cpp" />
     <ClCompile Include="ShowGameOptionsCommand.cpp" />
     <ClCompile Include="ShowUsersCommand.cpp" />
     <ClCompile Include="ShowPlayerStatisticsCommand.cpp" />
@@ -159,11 +160,13 @@
     <ClInclude Include="GameOptions.h" />
     <ClInclude Include="HowToPlayCommand.h" />
     <ClInclude Include="ICommand.h" />
+    <ClInclude Include="IDifficultyStrategy.h" />
     <ClInclude Include="LoginCommand.h" />
     <ClInclude Include="LogoutCommand.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="PlayGameCommand.h" />
     <ClInclude Include="RegisterCommand.h" />
+    <ClInclude Include="Session.h" />
     <ClInclude Include="ShowGameOptionsCommand.h" />
     <ClInclude Include="ShowUsersCommand.h" />
     <ClInclude Include="ShowPlayerStatisticsCommand.h" />
