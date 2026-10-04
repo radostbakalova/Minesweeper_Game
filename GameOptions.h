@@ -8,5 +8,8 @@ class GameOptions {
 
 public:
 	explicit GameOptions(int _rows, int _cols, Difficulty _difficulty);
+	int getRows() const;
+	int getCols() const;
+	Difficulty& getDifficulty() const;
 };
 
