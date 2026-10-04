@@ -9,7 +9,8 @@ enum class ExecutionResult {
 enum class TransitionResult {
 	Stay,
 	GoToAuthScreen,
-	GoToMainMenuScreen,
+	GoToAdminScreen,
+	GoToPlayerScreen,
 	Exit
 };
 
