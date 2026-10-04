@@ -133,6 +133,7 @@
     <ClCompile Include="LogoutCommand.cpp" />
     <ClCompile Include="Minesweeper_Game.cpp" />
     <ClCompile Include="Player.cpp" />
+    <ClCompile Include="PlayGameCommand.cpp" />
     <ClCompile Include="RegisterCommand.cpp" />
     <ClCompile Include="ShowUsersCommand.cpp" />
     <ClCompile Include="Statistics.cpp" />
@@ -151,6 +152,7 @@
     <ClInclude Include="LoginCommand.h" />
     <ClInclude Include="LogoutCommand.h" />
     <ClInclude Include="Player.h" />
+    <ClInclude Include="PlayGameCommand.h" />
     <ClInclude Include="RegisterCommand.h" />
     <ClInclude Include="ShowUsersCommand.h" />
     <ClInclude Include="Statistics.h" />
