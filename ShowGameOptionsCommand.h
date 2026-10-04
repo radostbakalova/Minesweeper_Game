@@ -1,12 +1,12 @@
 #pragma once
 #include "ICommand.h"
-//#include "GameOptions.h"
+#include "GameOptions.h"
 
 class ShowGameOptionsCommand : public ICommand {
-	//GameOptions& options;
+	GameOptions& options;
 
 public:
-	//explicit ShowGameOptionsCommand(GameOptions& _options);
+	explicit ShowGameOptionsCommand(GameOptions& _options);
 	CommandResult execute() override;
 };
 
