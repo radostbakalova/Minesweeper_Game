@@ -1,3 +1,11 @@
 #include "Session.h"
 
-Session::Session(User* _user, GameOptions& _options) : user(_user), options(_options) {}
+Session::Session(User* user, GameOptions& _options) : currentUser(user), options(_options) {}
+
+User* Session::getCurrentUser() const {
+    return currentUser;
+}
+
+GameOptions& Session::getGameOptions() const {
+    return options;
+}

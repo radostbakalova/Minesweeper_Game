@@ -1,9 +1,12 @@
 #pragma once
 #include "ICommand.h"
+#include "Session.h"
 
 class PlayGameCommand : public ICommand {
+	Session* currentSession;
+
 public:
-	PlayGameCommand() = default;
+	explicit PlayGameCommand(Session* _currentSession);
 	CommandResult execute() override;
 };
 

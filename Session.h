@@ -3,10 +3,12 @@
 #include "GameOptions.h"
 
 class Session {
-	User* user;
+	User* currentUser;
 	GameOptions& options;
 
 public:
-	explicit Session(User* _user, GameOptions& _options);
+	explicit Session(User* user, GameOptions& _options);
+	User* getCurrentUser() const;
+	GameOptions& getGameOptions() const;
 };
 
