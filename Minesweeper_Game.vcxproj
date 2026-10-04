@@ -130,6 +130,7 @@
     <ClCompile Include="Cell.cpp" />
     <ClCompile Include="CommandResult.cpp" />
     <ClCompile Include="GameOptions.cpp" />
+    <ClCompile Include="HowToPlayCommand.cpp" />
     <ClCompile Include="LoginCommand.cpp" />
     <ClCompile Include="LogoutCommand.cpp" />
     <ClCompile Include="Minesweeper_Game.cpp" />
@@ -152,6 +153,7 @@
     <ClInclude Include="Constants.h" />
     <ClInclude Include="EnumClasses.h" />
     <ClInclude Include="GameOptions.h" />
+    <ClInclude Include="HowToPlayCommand.h" />
     <ClInclude Include="ICommand.h" />
     <ClInclude Include="LoginCommand.h" />
     <ClInclude Include="LogoutCommand.h" />
