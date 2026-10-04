@@ -125,6 +125,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Admin.cpp" />
+    <ClCompile Include="AdminScreen.cpp" />
     <ClCompile Include="AuthScreen.cpp" />
     <ClCompile Include="BeginnerStrategy.cpp" />
     <ClCompile Include="BlockUserCommand.cpp" />
@@ -156,6 +157,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Admin.h" />
+    <ClInclude Include="AdminScreen.h" />
     <ClInclude Include="AuthScreen.h" />
     <ClInclude Include="BeginnerStrategy.h" />
     <ClInclude Include="BlockUserCommand.h" />
