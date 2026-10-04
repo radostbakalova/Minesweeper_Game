@@ -9,7 +9,6 @@ class Board {
 	size_t cols = 0;
 	std::vector<std::vector<Cell>> board;
 	std::vector<std::pair<int, int>> cellsToProcess;
-	//std::vector<std::pair<int, int>> firstCellNeighbors;
 	bool minesPlaced = false;
 	int totalMines = 0;
 	int revealedCells = 0;
