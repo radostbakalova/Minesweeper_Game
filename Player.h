@@ -12,6 +12,7 @@ public:
 	void saveToFile(const std::string& fileName) override;
 	const std::string& getUsername() const override;
 	const std::string& getPassword() const override;
+	bool isAdmin() const override;
 	void recordGame(bool won);
 };
 

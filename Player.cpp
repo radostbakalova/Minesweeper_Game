@@ -11,6 +11,10 @@ const std::string& Player::getPassword() const {
 	return password;
 }
 
+bool Player::isAdmin() const {
+	return false;
+}
+
 void Player::recordGame(bool won) {
 	stats.increasePlayedGames();
 	if (won)
