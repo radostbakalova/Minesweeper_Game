@@ -4,6 +4,7 @@
 
 class RegisterCommand : public ICommand {
 	UserManager& manager;
+
 public:
 	explicit RegisterCommand(UserManager& _manager);
 	CommandResult execute() override;
