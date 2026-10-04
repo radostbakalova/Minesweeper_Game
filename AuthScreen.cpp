@@ -3,10 +3,10 @@
 AuthScreen::AuthScreen(CommandFactory& factory) {
 	commands[1] = factory.create(1, std::nullopt);
 	commands[2] = factory.create(2, std::nullopt);
-	commands[3] = factory.create(1, std::nullopt);
+	commands[3] = factory.create(10, std::nullopt);
 }
 
-void AuthScreen::display() {
+void AuthScreen::display() const {
 	std::println(" 1 ) login");
 	std::println(" 2 ) register");
 	std::println(" 3 ) exit");
@@ -41,8 +41,11 @@ ScreenResult AuthScreen::handleInput() {
 			std::println("Failed to register!");
 			return ScreenResult(TransitionResult::Stay, std::nullopt);
 		}
-		if(result.status==ExecutionResult::Cancelled)
+		if (result.status == ExecutionResult::Cancelled)
 			return ScreenResult(TransitionResult::Stay, std::nullopt);
+
+		if (choice == 3)
+			return ScreenResult(TransitionResult::Exit, std::nullopt);
 	}
 	catch (const std::out_of_range& e) {
 		std::println("No valid command! Please try again.");

@@ -13,7 +13,7 @@ class AuthScreen : public IScreen {
 
 public:
 	explicit AuthScreen(CommandFactory& factory);
-	void display() override;
+	void display() const override;
 	ScreenResult handleInput() override;
 };
 
