@@ -10,6 +10,8 @@
 #include <memory>
 #include <print>
 #include <string>
+#include <fstream>
+#include <ostream>
 
 class System {
 	UserManager& manager;

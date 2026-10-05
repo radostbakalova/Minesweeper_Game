@@ -1,5 +1,16 @@
 #include "System.h"
 
+void System::loadFromFile(const std::string& fileName) {
+	std::ifstream is = std::ifstream(fileName);
+	if (!is.is_open())
+		throw std::runtime_error("Failed to open file.\n");
+	if (!is.good())
+		throw std::runtime_error("Failed to load data.\n");
+
+	manager.loadFromFile(is);
+	is.close();
+}
+
 System::System(UserManager& _manager) : manager(_manager), currentScreen(std::make_unique<AuthScreen>(factory)), factory(_manager) {}
 
 void System::run() {

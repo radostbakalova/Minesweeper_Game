@@ -1,5 +1,15 @@
 #include "Statistics.h"
 
+Statistics::Statistics(int _playedGames, int _wins) : playedGames(_playedGames), wins(_wins) {}
+
+Statistics Statistics::loadFromFile(std::istream& is) {
+	int playedGames, wins;
+	is >> playedGames;
+	is >> wins;
+	Statistics stats(playedGames, wins);
+	return stats;
+}
+
 int Statistics::getPlayedGames() const {
     return playedGames;
 }
