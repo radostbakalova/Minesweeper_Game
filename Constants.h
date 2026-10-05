@@ -12,4 +12,7 @@ namespace GameConstants {
 	inline constexpr int AUTH_SCREEN_COMMANDS = 3;
 	inline constexpr int ADMIN_SCREEN_COMMANDS = 4;
 	inline constexpr int PLAYER_SCREEN_COMMANDS = 6;
+
+	inline constexpr int DEFAULT_ROWS = 16;
+	inline constexpr int DEFAULT_COLS = 16;
 }
