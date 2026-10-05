@@ -1,5 +1,6 @@
 #pragma once
 #include "EnumClasses.h"
+#include "Constants.h"
 
 class GameOptions {
 	int rows;
@@ -7,7 +8,10 @@ class GameOptions {
 	Difficulty difficulty;
 
 public:
-	explicit GameOptions(int _rows, int _cols, Difficulty _difficulty);
+	GameOptions();
+	void setRows(int _rows);
+	void setCols(int _cols);
+	void setDifficulty(Difficulty _difficulty);
 	int getRows() const;
 	int getCols() const;
 	Difficulty getDifficulty() const;
