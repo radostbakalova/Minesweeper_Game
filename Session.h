@@ -1,14 +1,15 @@
 #pragma once
 #include "User.h"
 #include "GameOptions.h"
+#include <optional>
 
 class Session {
 	User* currentUser;
-	GameOptions& options;
+	std::optional<GameOptions*> options;
 
 public:
-	explicit Session(User* user, GameOptions& _options);
+	explicit Session(User* user, std::optional<GameOptions*> _options);
 	User* getCurrentUser() const;
-	GameOptions& getGameOptions() const;
+	GameOptions* getGameOptions() const;
 };
 
