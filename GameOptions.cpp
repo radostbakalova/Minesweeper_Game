@@ -10,6 +10,6 @@ int GameOptions::getCols() const {
     return cols;
 }
 
-Difficulty& GameOptions::getDifficulty() const {
+Difficulty GameOptions::getDifficulty() const {
     return difficulty;
 }
