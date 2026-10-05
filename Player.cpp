@@ -12,6 +12,13 @@ Player Player::loadFromFile(std::istream& is) {
 	return player;
 }
 
+void Player::saveToFile(std::ostream& os) {
+	os << userId;
+	os << username;
+	os << password;
+	stats.saveToFile(os);
+}
+
 const std::string& Player::getUsername() const {
 	return username;
 }

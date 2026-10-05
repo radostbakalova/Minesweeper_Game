@@ -11,6 +11,17 @@ void System::loadFromFile(const std::string& fileName) {
 	is.close();
 }
 
+void System::saveToFile(const std::string& fileName) {
+	std::ofstream os = std::ofstream(fileName);
+	if (!os.is_open())
+		throw std::runtime_error("Failed to open file.\n");
+	if (!os.good())
+		throw std::runtime_error("Failed to save data.\n");
+
+	manager.saveToFile(os);
+	os.close();
+}
+
 System::System(UserManager& _manager) : manager(_manager), currentScreen(std::make_unique<AuthScreen>(factory)), factory(_manager) {}
 
 void System::run() {

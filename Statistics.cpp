@@ -10,6 +10,11 @@ Statistics Statistics::loadFromFile(std::istream& is) {
 	return stats;
 }
 
+void Statistics::saveToFile(std::ostream& os) {
+	os << playedGames;
+	os << wins;
+}
+
 int Statistics::getPlayedGames() const {
     return playedGames;
 }

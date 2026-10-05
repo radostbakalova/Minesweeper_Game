@@ -12,6 +12,20 @@ Admin Admin::loadFromFile(std::istream& is) {
 	return admin;
 }
 
+void Admin::saveToFile(std::ostream& os) {
+	os << userId;
+	os << username;
+	os << password;
+}
+
+const std::string& Admin::getUsername() const {
+	return username;
+}
+
+const std::string& Admin::getPassword() const {
+	return password;
+}
+
 bool Admin::isAdmin() const {
 	return true;
 }
