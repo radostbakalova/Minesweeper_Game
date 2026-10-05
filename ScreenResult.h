@@ -6,8 +6,8 @@
 class IScreen;
 
 struct ScreenResult {
-	TransitionResult result;
+	TransitionResult transition;
 	std::optional<User*> user;
 
-	explicit ScreenResult(TransitionResult _result, std::optional<User*> _user);
+	explicit ScreenResult(TransitionResult _transition, std::optional<User*> _user);
 };
