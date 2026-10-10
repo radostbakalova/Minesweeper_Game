@@ -1,6 +1,6 @@
 #include "Session.h"
 
-Session::Session(User* user, std::optional<GameOptions*> _options _options) : currentUser(user), options(_options) {}
+Session::Session(User* user, std::optional<GameOptions*> _options) : currentUser(user), options(_options) {}
 
 User* Session::getCurrentUser() const {
     return currentUser;

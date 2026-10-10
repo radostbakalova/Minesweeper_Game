@@ -4,8 +4,9 @@
 
 class LoginCommand : public ICommand {
 	UserManager& manager;
+
 public:
-	LoginCommand(UserManager& _manager);
+	explicit LoginCommand(UserManager& _manager);
 	CommandResult execute() override;
 };
 

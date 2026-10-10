@@ -26,7 +26,13 @@ System::System(UserManager& _manager) : manager(_manager), currentScreen(std::ma
 
 void System::run() {
 	std::println(" --- WELCOME TO MINESWEEPER ---\n");
-	//loadFromFile();
+	try {
+		loadFromFile("data.txt");
+	}
+	catch (const std::runtime_error& e) {
+		std::println("{}", e.what());
+		return;
+	}
 	bool running = true;
 	while (running) {
 		currentScreen->display();
@@ -54,5 +60,11 @@ void System::run() {
 		}
 		std::println("Something went wrong. Please try again.");
 	}
-	//saveToFile();
+	try {
+		saveToFile("data.txt");
+	}
+	catch (const std::runtime_error& e) {
+		std::println("{}", e.what());
+		return;
+	}
 }

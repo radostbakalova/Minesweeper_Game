@@ -4,8 +4,9 @@
 
 class ShowUsersCommand : public ICommand {
 	UserManager& manager;
+
 public:
-	ShowUsersCommand(UserManager& _manager);
+	explicit ShowUsersCommand(UserManager& _manager);
 	CommandResult execute() override;
 };
 
