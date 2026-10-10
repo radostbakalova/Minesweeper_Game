@@ -1,9 +1,14 @@
 #include "AuthScreen.h"
 
 AuthScreen::AuthScreen(CommandFactory& factory) {
-	commands[1] = factory.create(1, std::nullopt);
-	commands[2] = factory.create(2, std::nullopt);
-	commands[3] = factory.create(10, std::nullopt);
+	try {
+		commands[1] = factory.create(1, std::nullopt);
+		commands[2] = factory.create(2, std::nullopt);
+		commands[3] = factory.create(10, std::nullopt);
+	}
+	catch (const std::invalid_argument& e) {
+		std::println("{}", e.what());
+	}
 }
 
 void AuthScreen::display() const {

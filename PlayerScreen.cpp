@@ -1,12 +1,17 @@
 #include "PlayerScreen.h"
 
 PlayerScreen::PlayerScreen(CommandFactory& factory) {
-	commands[1] = factory.create(6, std::nullopt);
-	commands[2] = factory.create(7, std::nullopt);
-	commands[3] = factory.create(8, std::nullopt);
-	commands[4] = factory.create(9, std::nullopt);
-	commands[5] = factory.create(5, std::nullopt);
-	commands[6] = factory.create(10, std::nullopt);
+	try {
+		commands[1] = factory.create(6, std::nullopt);
+		commands[2] = factory.create(7, std::nullopt);
+		commands[3] = factory.create(8, std::nullopt);
+		commands[4] = factory.create(9, std::nullopt);
+		commands[5] = factory.create(5, std::nullopt);
+		commands[6] = factory.create(10, std::nullopt);
+	}
+	catch (const std::invalid_argument& e) {
+		std::println("{}", e.what());
+	}
 }
 
 void PlayerScreen::display() const {

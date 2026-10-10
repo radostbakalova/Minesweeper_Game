@@ -1,10 +1,15 @@
 #include "AdminScreen.h"
 
 AdminScreen::AdminScreen(CommandFactory& factory) {
-	commands[1] = factory.create(3, std::nullopt);
-	commands[2] = factory.create(4, std::nullopt);
-	commands[3] = factory.create(5, std::nullopt);
-	commands[4] = factory.create(10, std::nullopt);
+	try {
+		commands[1] = factory.create(3, std::nullopt);
+		commands[2] = factory.create(4, std::nullopt);
+		commands[3] = factory.create(5, std::nullopt);
+		commands[4] = factory.create(10, std::nullopt);
+	}
+	catch (const std::invalid_argument& e) {
+		std::println("{}", e.what());
+	}
 }
 
 void AdminScreen::display() const {
