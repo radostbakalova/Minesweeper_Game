@@ -33,208 +33,208 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="BlockUserCommand.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="Admin.cpp">
-      <Filter>Users</Filter>
-    </ClCompile>
-    <ClCompile Include="Player.cpp">
-      <Filter>Users</Filter>
-    </ClCompile>
-    <ClCompile Include="User.cpp">
-      <Filter>Users</Filter>
-    </ClCompile>
-    <ClCompile Include="UserManager.cpp">
-      <Filter>Users</Filter>
+      <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="AdminScreen.cpp">
-      <Filter>Screens</Filter>
+      <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="AuthScreen.cpp">
-      <Filter>Screens</Filter>
-    </ClCompile>
-    <ClCompile Include="IScreen.cpp">
-      <Filter>Screens</Filter>
-    </ClCompile>
-    <ClCompile Include="PlayerScreen.cpp">
-      <Filter>Screens</Filter>
-    </ClCompile>
-    <ClCompile Include="BlockUserCommand.cpp">
-      <Filter>Commands</Filter>
-    </ClCompile>
-    <ClCompile Include="ExitCommand.cpp">
-      <Filter>Commands</Filter>
-    </ClCompile>
-    <ClCompile Include="HowToPlayCommand.cpp">
-      <Filter>Commands</Filter>
-    </ClCompile>
-    <ClCompile Include="LoginCommand.cpp">
-      <Filter>Commands</Filter>
-    </ClCompile>
-    <ClCompile Include="LogoutCommand.cpp">
-      <Filter>Commands</Filter>
-    </ClCompile>
-    <ClCompile Include="PlayGameCommand.cpp">
-      <Filter>Commands</Filter>
-    </ClCompile>
-    <ClCompile Include="RegisterCommand.cpp">
-      <Filter>Commands</Filter>
-    </ClCompile>
-    <ClCompile Include="ShowGameOptionsCommand.cpp">
-      <Filter>Commands</Filter>
-    </ClCompile>
-    <ClCompile Include="ShowPlayerStatisticsCommand.cpp">
-      <Filter>Commands</Filter>
-    </ClCompile>
-    <ClCompile Include="ShowUsersCommand.cpp">
-      <Filter>Commands</Filter>
-    </ClCompile>
-    <ClCompile Include="Cell.cpp">
-      <Filter>Game</Filter>
-    </ClCompile>
-    <ClCompile Include="Game.cpp">
-      <Filter>Game</Filter>
-    </ClCompile>
-    <ClCompile Include="Board.cpp">
-      <Filter>Game</Filter>
-    </ClCompile>
-    <ClCompile Include="ExpertStrategy.cpp">
-      <Filter>Strategies</Filter>
+      <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="BeginnerStrategy.cpp">
-      <Filter>Strategies</Filter>
+      <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="IntermediateStrategy.cpp">
-      <Filter>Strategies</Filter>
+    <ClCompile Include="Board.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Statistics.cpp">
-      <Filter>Users</Filter>
-    </ClCompile>
-    <ClCompile Include="ScreenResult.cpp">
-      <Filter>Screens</Filter>
-    </ClCompile>
-    <ClCompile Include="CommandResult.cpp">
-      <Filter>Commands</Filter>
+    <ClCompile Include="Cell.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="CommandFactory.cpp">
-      <Filter>Core</Filter>
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CommandResult.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ExitCommand.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ExpertStrategy.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="GameOptions.cpp">
-      <Filter>Core</Filter>
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="HowToPlayCommand.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IntermediateStrategy.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IScreen.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LoginCommand.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LogoutCommand.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Minesweeper_Game.cpp">
-      <Filter>Core</Filter>
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerScreen.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayGameCommand.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RegisterCommand.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ScreenResult.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Session.cpp">
-      <Filter>Core</Filter>
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ShowGameOptionsCommand.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ShowPlayerStatisticsCommand.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ShowUsersCommand.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Statistics.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="System.cpp">
-      <Filter>Core</Filter>
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="User.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UserManager.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="User.h">
-      <Filter>Users</Filter>
-    </ClInclude>
-    <ClInclude Include="UserManager.h">
-      <Filter>Users</Filter>
-    </ClInclude>
-    <ClInclude Include="Player.h">
-      <Filter>Users</Filter>
+    <ClInclude Include="BlockUserCommand.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Admin.h">
-      <Filter>Users</Filter>
+      <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="AdminScreen.h">
-      <Filter>Screens</Filter>
+      <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="AuthScreen.h">
-      <Filter>Screens</Filter>
-    </ClInclude>
-    <ClInclude Include="IScreen.h">
-      <Filter>Screens</Filter>
-    </ClInclude>
-    <ClInclude Include="PlayerScreen.h">
-      <Filter>Screens</Filter>
-    </ClInclude>
-    <ClInclude Include="BlockUserCommand.h">
-      <Filter>Commands</Filter>
-    </ClInclude>
-    <ClInclude Include="ExitCommand.h">
-      <Filter>Commands</Filter>
-    </ClInclude>
-    <ClInclude Include="HowToPlayCommand.h">
-      <Filter>Commands</Filter>
-    </ClInclude>
-    <ClInclude Include="ICommand.h">
-      <Filter>Commands</Filter>
-    </ClInclude>
-    <ClInclude Include="LoginCommand.h">
-      <Filter>Commands</Filter>
-    </ClInclude>
-    <ClInclude Include="LogoutCommand.h">
-      <Filter>Commands</Filter>
-    </ClInclude>
-    <ClInclude Include="PlayGameCommand.h">
-      <Filter>Commands</Filter>
-    </ClInclude>
-    <ClInclude Include="RegisterCommand.h">
-      <Filter>Commands</Filter>
-    </ClInclude>
-    <ClInclude Include="ShowGameOptionsCommand.h">
-      <Filter>Commands</Filter>
-    </ClInclude>
-    <ClInclude Include="ShowPlayerStatisticsCommand.h">
-      <Filter>Commands</Filter>
-    </ClInclude>
-    <ClInclude Include="ShowUsersCommand.h">
-      <Filter>Commands</Filter>
-    </ClInclude>
-    <ClInclude Include="Cell.h">
-      <Filter>Game</Filter>
-    </ClInclude>
-    <ClInclude Include="Board.h">
-      <Filter>Game</Filter>
-    </ClInclude>
-    <ClInclude Include="Game.h">
-      <Filter>Game</Filter>
+      <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="BeginnerStrategy.h">
-      <Filter>Strategies</Filter>
+      <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="ExpertStrategy.h">
-      <Filter>Strategies</Filter>
+    <ClInclude Include="Board.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="IDifficultyStrategy.h">
-      <Filter>Strategies</Filter>
-    </ClInclude>
-    <ClInclude Include="IntermediateStrategy.h">
-      <Filter>Strategies</Filter>
-    </ClInclude>
-    <ClInclude Include="Statistics.h">
-      <Filter>Users</Filter>
-    </ClInclude>
-    <ClInclude Include="ScreenResult.h">
-      <Filter>Screens</Filter>
-    </ClInclude>
-    <ClInclude Include="CommandResult.h">
-      <Filter>Commands</Filter>
-    </ClInclude>
-    <ClInclude Include="System.h">
-      <Filter>Core</Filter>
-    </ClInclude>
-    <ClInclude Include="Session.h">
-      <Filter>Core</Filter>
-    </ClInclude>
-    <ClInclude Include="GameOptions.h">
-      <Filter>Core</Filter>
-    </ClInclude>
-    <ClInclude Include="EnumClasses.h">
-      <Filter>Core</Filter>
-    </ClInclude>
-    <ClInclude Include="Constants.h">
-      <Filter>Core</Filter>
+    <ClInclude Include="Cell.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="CommandFactory.h">
-      <Filter>Core</Filter>
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CommandResult.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Constants.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EnumClasses.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExitCommand.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExpertStrategy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Game.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GameOptions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="HowToPlayCommand.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ICommand.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IDifficultyStrategy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IntermediateStrategy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IScreen.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LoginCommand.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LogoutCommand.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerScreen.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayGameCommand.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RegisterCommand.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ScreenResult.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Session.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ShowGameOptionsCommand.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ShowPlayerStatisticsCommand.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ShowUsersCommand.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Statistics.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="System.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="User.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UserManager.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

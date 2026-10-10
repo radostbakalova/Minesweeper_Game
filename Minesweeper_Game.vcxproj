@@ -76,6 +76,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir)Users;$(ProjectDir)Screens;$(ProjectDir)Commands;$(ProjectDir)Game;$(ProjectDir)Strategies;$(ProjectDir)Core;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -90,6 +91,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir)Users;$(ProjectDir)Screens;$(ProjectDir)Commands;$(ProjectDir)Game;$(ProjectDir)Strategies;$(ProjectDir)Core;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -103,6 +105,7 @@
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp23</LanguageStandard>
+      <AdditionalIncludeDirectories>$(ProjectDir)Users;$(ProjectDir)Screens;$(ProjectDir)Commands;$(ProjectDir)Game;$(ProjectDir)Strategies;$(ProjectDir)Core;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -117,6 +120,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir)Users;$(ProjectDir)Screens;$(ProjectDir)Commands;$(ProjectDir)Game;$(ProjectDir)Strategies;$(ProjectDir)Core;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -150,8 +154,8 @@
     <ClCompile Include="ScreenResult.cpp" />
     <ClCompile Include="Session.cpp" />
     <ClCompile Include="ShowGameOptionsCommand.cpp" />
-    <ClCompile Include="ShowUsersCommand.cpp" />
     <ClCompile Include="ShowPlayerStatisticsCommand.cpp" />
+    <ClCompile Include="ShowUsersCommand.cpp" />
     <ClCompile Include="Statistics.cpp" />
     <ClCompile Include="System.cpp" />
     <ClCompile Include="User.cpp" />
@@ -187,8 +191,8 @@
     <ClInclude Include="ScreenResult.h" />
     <ClInclude Include="Session.h" />
     <ClInclude Include="ShowGameOptionsCommand.h" />
-    <ClInclude Include="ShowUsersCommand.h" />
     <ClInclude Include="ShowPlayerStatisticsCommand.h" />
+    <ClInclude Include="ShowUsersCommand.h" />
     <ClInclude Include="Statistics.h" />
     <ClInclude Include="System.h" />
     <ClInclude Include="User.h" />
