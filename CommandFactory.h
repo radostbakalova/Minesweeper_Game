@@ -1,6 +1,16 @@
 #pragma once
 #include "UserManager.h"
 #include "ICommand.h"
+#include "LoginCommand.h"
+#include "RegisterCommand.h"
+#include "ShowUsersCommand.h"
+#include "BlockUserCommand.h"
+#include "LogoutCommand.h"
+#include "PlayGameCommand.h"
+#include "ShowGameOptionsCommand.h"
+#include "ShowPlayerStatisticsCommand.h"
+#include "HowToPlayCommand.h"
+#include "ExitCommand.h"
 #include "Session.h"
 #include <memory>
 #include <optional>
