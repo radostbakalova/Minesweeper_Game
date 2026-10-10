@@ -41,9 +41,9 @@ bool Game::play() {
         catch (const std::invalid_argument& e) {
             std::println("{}", e.what());
         }
-        if (isGameOver && !board.isBoardRevealed()) {
+        if (isGameOver)
             std::println("Game over, you hit a mine!\n");
-        }
+
         if (board.isBoardRevealed()) {
             std::println("Congratulations, you won!\n");
             won = true;
