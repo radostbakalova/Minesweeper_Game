@@ -172,62 +172,46 @@ void Board::display() const {
 }
 
 bool Board::reveal(int row, int col) {
-	try {
-		if (!isCellInScope(row, col))
-			throw std::invalid_argument("Cell is out of scope.\n");
+	if (!isCellInScope(row, col))
+		throw std::invalid_argument("Cell is out of scope.\n");
 
-		if (!minesPlaced) {
-			revealFirstCell(row, col);
-			return true;
-		}
-		else {
-			board[row][col].reveal();
-			revealedCells++;
-			if (board[row][col].isMine())
-				return false;
-
-			cellsToProcess.push_back({ row, col });
-			processCells();
-			return true;
-		}
+	if (!minesPlaced) {
+		revealFirstCell(row, col);
+		return true;
 	}
-	catch (const std::logic_error& e) {
-		std::println("{}", e.what());
+	else {
+		board[row][col].reveal();
+		revealedCells++;
+		if (board[row][col].isMine())
+			return false;
+
+		cellsToProcess.push_back({ row, col });
+		processCells();
 		return true;
 	}
 }
 
 void Board::flag(int row, int col) {
-	try {
-		if (!isCellInScope(row, col))
-			throw std::invalid_argument("Cell is out of scope.\n");
+	if (!isCellInScope(row, col))
+		throw std::invalid_argument("Cell is out of scope.\n");
 
-		if (board[row][col].isRevealed())
-			throw std::invalid_argument("Cannot flag revealed cells.\n");
+	if (board[row][col].isRevealed())
+		throw std::invalid_argument("Cannot flag revealed cells.\n");
 
-		if (board[row][col].isFlagged())
-			throw std::invalid_argument("Cell is already flagged.\n");
+	if (board[row][col].isFlagged())
+		throw std::invalid_argument("Cell is already flagged.\n");
 
-		board[row][col].flag();
-	}
-	catch (const std::invalid_argument& e) {
-		std::println("{}", e.what());
-	}
+	board[row][col].flag();
 }
 
 void Board::unflag(int row, int col) {
-	try {
-		if (!isCellInScope(row, col))
-			throw std::invalid_argument("Cell is out of scope.\n");
+	if (!isCellInScope(row, col))
+		throw std::invalid_argument("Cell is out of scope.\n");
 
-		if (!board[row][col].isFlagged())
-			throw std::invalid_argument("Cell is not flagged.\n");
+	if (!board[row][col].isFlagged())
+		throw std::invalid_argument("Cell is not flagged.\n");
 
-		board[row][col].unflag();
-	}
-	catch (const std::invalid_argument& e) {
-		std::println("{}", e.what());
-	}
+	board[row][col].unflag();
 }
 
 bool Board::isBoardRevealed() const {
