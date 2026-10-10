@@ -13,24 +13,6 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="Users">
-      <UniqueIdentifier>{e9cf6272-beba-4f33-b459-e41bd7212c1d}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Screens">
-      <UniqueIdentifier>{567d4cc4-b2c0-4ff7-89d1-6d0cc8fd8fd5}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Commands">
-      <UniqueIdentifier>{fcdb4c5f-aeaa-4893-a1da-b07f55e293db}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Game">
-      <UniqueIdentifier>{bf8f269c-925f-4706-ad08-bbd2b242bb05}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Strategies">
-      <UniqueIdentifier>{b4d765e5-7841-460a-8729-bc76d95ae038}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Core">
-      <UniqueIdentifier>{29c5cb9c-0a31-42fb-9770-69afa179c45f}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="BlockUserCommand.cpp">
